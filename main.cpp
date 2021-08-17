@@ -29,19 +29,7 @@ int binaryToDecimal(string n)
     return dec_value;
 }
 
-string decimalToBinary(int n) //long long
-{
-   int i = 0;
-   string result="";
-   while (n > 0) {
-   //   binaryNumber[i] = n % 2;
-      result = result + to_string(n % 2);
-      n = n / 2;
-   }
-   return result;
-}
-
-string DecimalToBinary(int n) {
+string decimalToBinary(int n) {
    int binaryNumber[100], num=n;
    int i = 0;
    string result="";
@@ -62,9 +50,9 @@ int main()
     string num = "10101001";
     cout << binaryToDecimal(num) << endl;
 
-    cout << DecimalToBinary(169) << endl;
+    cout << decimalToBinary(169) << endl;
 
-    //DecimalToBinary(169);
+    //decimalToBinary(169);
      
     return 0;
 }
