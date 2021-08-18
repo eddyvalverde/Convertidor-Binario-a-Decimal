@@ -43,16 +43,78 @@ string decimalToBinary(int n) {
    return result;
 }
 
+void menu(){
+    int option=0;
+    int decimalNumber = 0;
+    string binaryNumber = "";
+    while (option!=3)
+    {
+        
+        cout<<"*******************Menu*******************"<<endl;
+        cout<<"********1-Convert Decimal to Binary*******"<<endl;
+        cout<<"********2-Convert Binary to Decimal*******"<<endl;
+        cout<<"******************3-Exit******************"<<endl;
+        cin >> option;
+        if(option == 1){
+            cout<<"######### Write a Decimal Number #########"<<endl;
+            cin >> decimalNumber;
+            cout << decimalToBinary(decimalNumber) << endl;
+            
+        }
+        else if (option == 2){
+            cout<<"######### Write a Binary Number #########"<<endl;
+            cin >> binaryNumber;
+            cout << binaryToDecimal(binaryNumber) << endl;
+        }
+        else if (option == 3){
+            break;
+        }
+        else
+        {
+            system("CLS");
+            cout<<"    "<<endl;
+            cout<<"              Pick a Valid Option  "<<endl;
+            cout<<"    "<<endl;
+        }
+    }
+    
+}
+
 int main()
 {
-    // prints hello world
-    cout<<"Hello World";
-    string num = "10101001";
-    cout << binaryToDecimal(num) << endl;
-
-    cout << decimalToBinary(169) << endl;
-
-    //decimalToBinary(169);
+    int option=0;
+    int decimalNumber = 0;
+    string binaryNumber = "";
+    while (option!=3)
+    {
+        
+        cout<<"*******************Menu*******************"<<endl;
+        cout<<"********1-Convert Decimal to Binary*******"<<endl;
+        cout<<"********2-Convert Binary to Decimal*******"<<endl;
+        cout<<"******************3-Exit******************"<<endl;
+        cin >> option;
+        if(option == 1){
+            cout<<"######### Write a Decimal Number #########"<<endl;
+            cin >> decimalNumber;
+            cout << decimalToBinary(decimalNumber) << endl;
+            
+        }
+        else if (option == 2){
+            cout<<"######### Write a Binary Number #########"<<endl;
+            cin >> binaryNumber;
+            cout << binaryToDecimal(binaryNumber) << endl;
+        }
+        else if (option == 3){
+            break;
+        }
+        else
+        {
+            system("cls");
+            cout<<"    "<<endl;
+            cout<<"              Pick a Valid Option  "<<endl;
+            cout<<"    "<<endl;
+        }
+    }
      
     return 0;
 }
