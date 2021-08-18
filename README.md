@@ -1,11 +1,13 @@
-# Binary-to-Decimal-and-Back-Converter
+# Convertidor-Binario-a-Decimal
 
-# User stories
+## Historias de Usuario
+
+El sistema cuenta con un usuario
 
 
-As a user I want to transform a number from decimal representation to binary representation
+Como usuario quiero pasar un numero de representación binaria a representación decimal
 
-As a user I want to transform a number from binary representation to decimal representation
+Como usuario quiero pasar un numero de representación decimal a binaria 
 
-As a user I want exit the program
+Como usuario quiero salir del sistema
 
