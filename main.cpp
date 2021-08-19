@@ -50,7 +50,7 @@ int main()
     int option=0;
     int decimalNumber = 0;
     string binaryNumber = "";
-    while (true)
+    while (option!=0)
     {
         
         cout<<"*******************Menu*******************"<<endl;
