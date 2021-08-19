@@ -50,7 +50,7 @@ int main()
     int option=0;
     int decimalNumber = 0;
     string binaryNumber = "";
-    while (option!=3)
+    while (true)
     {
         
         cout<<"*******************Menu*******************"<<endl;
@@ -58,26 +58,26 @@ int main()
         cout<<"********2-Convert Binary to Decimal*******"<<endl;
         cout<<"******************3-Exit******************"<<endl;
         cin >> option;
-        if(option == 1){
-            cout<<"######### Write a Decimal Number #########"<<endl;
-            cin >> decimalNumber;
-            cout << decimalToBinary(decimalNumber) << endl;
-            
-        }
-        else if (option == 2){
-            cout<<"######### Write a Binary Number #########"<<endl;
-            cin >> binaryNumber;
-            cout << binaryToDecimal(binaryNumber) << endl;
-        }
-        else if (option == 3){
+        switch(option){
+            case 1:
+                cout<<"######### Write a Decimal Number #########"<<endl;
+                cin >> decimalNumber;
+                cout << decimalToBinary(decimalNumber) << endl;
             break;
-        }
-        else
-        {
-            system("cls");
-            cout<<"    "<<endl;
-            cout<<"              Pick a Valid Option  "<<endl;
-            cout<<"    "<<endl;
+            case 2:
+                cout<<"######### Write a Binary Number #########"<<endl;
+                cin >> binaryNumber;
+                cout << binaryToDecimal(binaryNumber) << endl;
+            break;
+            case 3:
+                break;
+            break;
+            default:
+                system("cls");
+                cout<<"    "<<endl;
+                cout<<"              Pick a Valid Option  "<<endl;
+                cout<<"    "<<endl;
+
         }
     }
      
